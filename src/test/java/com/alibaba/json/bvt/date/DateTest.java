@@ -7,6 +7,7 @@ import java.util.TimeZone;
 import junit.framework.TestCase;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
@@ -17,6 +18,7 @@ public class DateTest extends TestCase {
         JSON.defaultLocale = Locale.CHINA;
     }
 
+    @Ignore
     public void test_date() throws Exception {
         long millis = 1324138987429L;
         Date date = new Date(millis);

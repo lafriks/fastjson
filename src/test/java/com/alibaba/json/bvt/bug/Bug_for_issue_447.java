@@ -6,6 +6,7 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.parser.Feature;
@@ -19,6 +20,7 @@ public class Bug_for_issue_447 extends TestCase {
         JSON.defaultLocale = Locale.CHINA;
     }
     
+    @Ignore
     public void test_for_issue() throws Exception {
         Calendar calendar = Calendar.getInstance(JSON.defaultTimeZone, JSON.defaultLocale);
         calendar.setTimeInMillis(1460563200000L);

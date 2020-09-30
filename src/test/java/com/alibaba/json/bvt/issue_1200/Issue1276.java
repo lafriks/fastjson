@@ -1,12 +1,16 @@
 package com.alibaba.json.bvt.issue_1200;
 
 import com.alibaba.fastjson.JSON;
+
+import org.junit.Ignore;
+
 import junit.framework.TestCase;
 
 /**
  * Created by wenshao on 18/06/2017.
  */
 public class Issue1276 extends TestCase {
+    @Ignore
     public void test_for_issue() throws Exception {
         MyException myException = new MyException(100,"error msg");
         String str = JSON.toJSONString(myException);

@@ -9,6 +9,7 @@ import java.util.Random;
 import java.util.UUID;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONException;
@@ -20,11 +21,13 @@ import junit.framework.TestCase;
 public class Issue2579 extends TestCase {
 
 	// 场景：走ASM
+	@Ignore
 	public void test_for_issue1() throws Exception {
 		run_test("MyPoint1");
 	}
 
 	// 场景：不走ASM,通过JSONType（asm=false），关闭了ASM
+	@Ignore
 	public void test_for_issue2() throws Exception {
 		run_test("MyPoint2");
 	}
