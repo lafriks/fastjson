@@ -36,4 +36,5 @@ jobs:
       env:
         REPORT_CI_TOKEN: ${{ secrets.REPORT_CI_TOKEN }}
       run: |
-        python < $(curl https://report.ci/report.py)
+        curl https://report.ci/report.py -o report.py
+        python report.py
