@@ -1,7 +1,7 @@
 
 # fastjson
 
-[![Build Status](https://ci.rtu.lafriks.id.lv/buildStatus/icon?job=fastjson)](https://ci.rtu.lafriks.id.lv/job/fastjson/)
+[![Build Status](https://github.com/lafriks/fastjson/workflows/Java%20CI%20with%20Maven/badge.svg?event=push)](https://github.com/lafriks/fastjson/actions?query=workflow%3A%22Java+CI+with+Maven%22)
 [![Codecov](https://codecov.io/gh/alibaba/fastjson/branch/master/graph/badge.svg)](https://codecov.io/gh/alibaba/fastjson/branch/master)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson/)
 [![GitHub release](https://img.shields.io/github/release/alibaba/fastjson.svg)](https://github.com/alibaba/fastjson/releases)
