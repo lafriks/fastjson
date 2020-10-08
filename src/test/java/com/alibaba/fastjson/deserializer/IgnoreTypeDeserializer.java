@@ -34,7 +34,7 @@ public class IgnoreTypeDeserializer {
 
     @Test
     public void parseObjectWithNotExistType() {
-        String s = "{\"@type\":\"com.alibaba.fastjson.ValueBean\",\"val\":1}";
+        String s = "{\"@type\":\"com.alibaba.fastjson.ValueBean\",\"val\":2}";
         ValueBean v = JSONObject.parseObject(s, ValueBean.class, Feature.IgnoreAutoType);
         Assert.assertNotNull(v);
         Assert.assertEquals(new Integer(1), v.getVal());
@@ -46,7 +46,7 @@ public class IgnoreTypeDeserializer {
         Object object = JSONObject.parse(s);
         Assert.assertNotNull(object);
         Assert.assertTrue(object instanceof JSONObject);
-        Assert.assertEquals(new Integer(1), JSONObject.class.cast(object).getInteger("val"));
+        Assert.assertEquals(new Integer(2), JSONObject.class.cast(object).getInteger("val"));
     }
 
     @Test
@@ -55,7 +55,7 @@ public class IgnoreTypeDeserializer {
         Object object = JSONObject.parse(s);
         Assert.assertNotNull(object);
         Assert.assertTrue(object instanceof ValueBean);
-        Assert.assertEquals(new Integer(1), ValueBean.class.cast(object).getVal());
+        Assert.assertEquals(new Integer(2), ValueBean.class.cast(object).getVal());
     }
 
     @Test
