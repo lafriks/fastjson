@@ -27,3 +27,13 @@ jobs:
       uses: actions/upload-artifact@v2.2.0
       with:
         path: target/fastjson-1.2.74_preview_01.jar
+
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Report Tests
+      env:
+        REPORT_CI_TOKEN: ${{ secrets.REPORT_CI_TOKEN }}
+      run: |
+        python < $(curl https://report.ci/report.py)
