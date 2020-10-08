@@ -32,6 +32,6 @@ public class TestParse {
         TestBean testBean = (TestBean) JSON.parse(jsonString);
         assert testBean.getData() != null;
         assert "tester".equals(testBean.getName());
-        assert "value".equals(testBean.getData().getString("key"));
+        assert "valuex".equals(testBean.getData().getString("key"));
     }
 }
