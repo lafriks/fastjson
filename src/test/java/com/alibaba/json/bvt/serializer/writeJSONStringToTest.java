@@ -11,7 +11,7 @@ import junit.framework.TestCase;
 public class writeJSONStringToTest extends TestCase {
     public void test_writeJSONStringTo() throws Exception {
         Model model = new Model();
-        model.id = 1001;
+        model.id = 1002;
         model.name = "中文名称";
         
         ByteArrayOutputStream os = new ByteArrayOutputStream();
